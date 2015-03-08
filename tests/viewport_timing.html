@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width">
+<head>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById('a1').innerText = window.innerHeight;
+  document.getElementById('a2').innerText = window.innerWidth;
+}, false);
+
+window.onload = function() {
+  document.getElementById('b1').innerText = window.innerHeight;
+  document.getElementById('b2').innerText = window.innerWidth;
+};
+</script>
+</head>
+<body>
+<script type="text/javascript">
+(function() {
+ document.write('<p>window.innerHeight(instant): <span>' + window.innerHeight + '</span>px</p>');
+ document.write('<p>window.innerWidth(instant: <span>' + window.innerWidth + '</span>px</p>');
+})();
+</script>
+
+<p>window.innerHeight(DomContentLoaded): <span id="a1"></span>px</p>
+<p>window.innerWidth(DomContentLoaded): <span id="a2"></span>px</p>
+
+<p>window.innerHeight(onload): <span id="b1"></span>px</p>
+<p>window.innerWidth(onload): <span id="b2"></span>px</p>
+
+</body>
+</html>

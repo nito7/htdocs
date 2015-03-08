@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../js/event_capture.js"></script>
+<body>
+<div id="t1">
+</div>
+
+<script>
+
+function setEvent(n, t, h) {
+  if (document.addEventListener) {
+    n.addEventListener(t, function(e) {
+      h.call(n, e);
+    }, false);
+  } else if (document.attachEvent) {
+    n.attachEvent('on' + t, h, function(e) {
+      h.call(n, e);
+    });
+  }
+}
+
+</script>
+
+
+
+<script>
+window.EventCapture.displayInfo();
+
+setEvent(window, 'click', window.EventCapture.getPointOfCursor);
+
+</script>
+
+</body>
+</html>
