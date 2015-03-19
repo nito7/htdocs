@@ -1,0 +1,9 @@
+{
+  "name": "node_sample",
+  "version": "0.0.0",
+  "description": "Node samples.",
+  "license": "BSD",
+  "devDependencies": {
+    "express": "~4.12.2"
+  }
+}
