@@ -101,12 +101,12 @@ onload = function(){
   var cubeTexture = null;
   
   // キューブマップ用イメージのソースを配列に格納
-  var cubeSourse = new Array( 'cube_PX.png',
-                'cube_PY.png',
-                'cube_PZ.png',
-                'cube_NX.png',
-                'cube_NY.png',
-                'cube_NZ.png');
+  var cubeSourse = new Array( 'img/cube_PX.png',
+                              'img/cube_PY.png',
+                              'img/cube_PZ.png',
+                              'img/cube_NX.png',
+                              'img/cube_NY.png',
+                              'img/cube_NZ.png');
   
   // キューブマップ用のターゲットを格納する配列
   var cubeTarget = new Array( gl.TEXTURE_CUBE_MAP_POSITIVE_X,
